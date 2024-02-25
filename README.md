@@ -1,2 +1,2 @@
-pythonを使用した制作物です。
-1.　Flask_TODOウェブアプリ
+pythonを使用した制作物です。<br>
+1.　Flask_TODO ウェブアプリ
