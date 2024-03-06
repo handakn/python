@@ -1,2 +1,5 @@
 pythonを使用した制作物です。<br>
-1.　Flask_TODO ウェブアプリ
+<ul>
+<li>Flask_TODO ウェブアプリ</li>
+<li>Flask_占い　ウェブアプリ</li>
+</ul>
