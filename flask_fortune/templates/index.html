@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../static/style.css" rel="stylesheet" >
+  <title>星座占い</title>
+</head>
+<body>
+  <h3>{{date}}</h3>
+  <h1>horoscope</h1>  
+  <h2>星座を選択してね</h2>
+  <img src="../static/images/horo.png" alt="girl" id="girl">
+  <fieldset class="container">  
+      <form action="{{ url_for('fortune') }}" method="post" class="p-3" >
+      
+      <label for="0">
+        <img src="../static/images/0.png" alt="Aries"><br>
+        <input type="radio" name="seiza" id="0" value="0" checked>おひつじ座<br>
+      </label>
+      <label for="1">
+        <img src="../static/images/1.png" alt="Taurus"><br>
+        <input type="radio" name="seiza" id="1" value="1">おうし座<br>
+      </label>
+      <label for="2">
+        <img src="../static/images/2.png" alt="Gemini"><br>
+        <input type="radio" name="seiza" id="2" value="2">ふたご座<br>
+      </label>
+      <label for="3">
+        <img src="../static/images/3.png" alt="Cancer"><br>
+        <input type="radio" name="seiza" id="3" value="3">かに座<br>
+      </label>
+      <label for="4">
+        <img src="../static/images/4.png" alt="Leo"><br>
+        <input type="radio" name="seiza" id="4" value="4">しし座<br>
+      </label>
+      <label for="5">
+        <img src="../static/images/5.png" alt="Virgo"><br>
+        <input type="radio" name="seiza" id="5" value="5">おとめ座<br>
+      </label>
+      <label for="6">
+        <img src="../static/images/6.png" alt="Libra"><br>
+        <input type="radio" name="seiza" id="6" value="6">てんびん座<br>
+      </label>
+      <label for="7">
+        <img src="../static/images/7.png" alt="Scorpio"><br>
+        <input type="radio" name="seiza" id="7" value="7">さそり座<br>
+      </label>
+      <label for="8">
+        <img src="../static/images/8.png" alt="Sagittarius"><br>
+        <input type="radio" name="seiza" id="8" value="8">いて座<br>
+      </label>
+      <label for="9">
+        <img src="../static/images/9.png" alt="Capricorn"><br>
+        <input type="radio" name="seiza" id="9" value="9">やぎ座<br>
+      </label>
+      <label for="10">
+        <img src="../static/images/10.png" alt="Aquarius"><br>
+        <input type="radio" name="seiza" id="10" value="10">みずがめ座<br>
+      </label>
+      <label for="11">
+        <img src="../static/images/11.png" alt="Pisces"><br>
+        <input type="radio" name="seiza" id="11" value="11">うお座<br>
+      </label>
+      <br>
+      <button type="submit" class="btn btn-primary btn-lg"> 占う </button>
+    
+    </form>
+  </fieldset>
+  <footer>
+  <hr>
+    <p>powerd by <a href="http://jugemkey.jp/api/">JugemKey</a>
+    【PR】<a href="http://www.tarim.co.jp/">原宿占い館 塔里木</a></p>
+  </footer>
+</body>
+</html>
